@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.row {
+    @apply flex flex-row space-x-2;
+}
+
+.col {
+    @apply flex flex-col space-y-2;
+}
+
+body {
+    @apply bg-slate-800 text-white;
+}
+
+input {
+    @apply bg-slate-700 rounded-xl p-2;
+}
+
+.bubble {
+    @apply bg-slate-700 rounded-xl p-2;
+}
