@@ -5,6 +5,8 @@ export function Home() {
     return (
         <div className='col'>
             <Link to='/tip-calculator'>Tip Calculator</Link>
+            <Link to='/discount-calculator'>Discount Calculator</Link>
+            <Link to='/temperature-converter'>Temperature Converter</Link>
         </div>
     )
 }

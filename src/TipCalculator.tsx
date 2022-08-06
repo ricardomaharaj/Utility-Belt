@@ -35,7 +35,6 @@ export function TipCalculator() {
                 />
             </div>
             <div className='bubble'>
-                <div className='row'>{`${percent}% of ${total} is ${tip}`}</div>
                 <div className='row'>{`Tip: $${tip.toLocaleString()}`}</div>
                 <div className='row'>
                     {`Total with tip: $${(total + tip).toLocaleString()}`}
