@@ -4,9 +4,10 @@ export function Home() {
     document.title = 'Utility Belt'
     return (
         <div className='col'>
-            <Link to='/tip-calculator'>Tip Calculator</Link>
-            <Link to='/discount-calculator'>Discount Calculator</Link>
-            <Link to='/temperature-converter'>Temperature Converter</Link>
+            <Link to='/tip'>Tip Calculator</Link>
+            <Link to='/discount'>Discount Calculator</Link>
+            <Link to='/temperature'>Temperature Converter</Link>
+            <Link to='/distance'>Distance Converter</Link>
         </div>
     )
 }
