@@ -3,7 +3,7 @@ import { Home } from './Home'
 import { Discount } from './tools/Discount'
 import { Temperature } from './tools/Temperature'
 import { Tip } from './tools/Tip'
-import { Distance } from './tools/Distance'
+import { Length } from './tools/Length'
 
 export function App() {
     return (
@@ -14,7 +14,7 @@ export function App() {
                     <Route path='/tip' element={<Tip />} />
                     <Route path='/discount' element={<Discount />} />
                     <Route path='/temperature' element={<Temperature />} />
-                    <Route path='/distance' element={<Distance />} />
+                    <Route path='/length' element={<Length />} />
                 </Routes>
             </div>
         </BrowserRouter>

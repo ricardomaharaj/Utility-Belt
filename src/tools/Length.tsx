@@ -8,8 +8,8 @@ const UnitMap = [
     'Inch'
 ]
 
-export function Distance() {
-    document.title = 'Distance Converter'
+export function Length() {
+    document.title = 'Length Converter'
     let handleChange = (unit: string) => {
         const CentimeterE =
             document.querySelector<HTMLInputElement>('#Centimeter')!

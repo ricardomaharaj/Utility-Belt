@@ -7,7 +7,7 @@ export function Home() {
             <Link to='/tip'>Tip Calculator</Link>
             <Link to='/discount'>Discount Calculator</Link>
             <Link to='/temperature'>Temperature Converter</Link>
-            <Link to='/distance'>Distance Converter</Link>
+            <Link to='/length'>Length Converter</Link>
         </div>
     )
 }
