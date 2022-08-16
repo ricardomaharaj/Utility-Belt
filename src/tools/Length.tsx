@@ -10,6 +10,7 @@ const UnitMap = [
 
 export function Length() {
     document.title = 'Length Converter'
+
     let handleChange = (unit: string) => {
         const CentimeterE =
             document.querySelector<HTMLInputElement>('#Centimeter')!
@@ -97,7 +98,7 @@ export function Length() {
             {UnitMap.map((x, i) => (
                 <div className='row' key={i}>
                     <input
-                        type='text'
+                        type='number'
                         id={x}
                         onChange={() => handleChange(x)}
                     />
