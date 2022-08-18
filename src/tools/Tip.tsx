@@ -13,10 +13,11 @@ export function Tip() {
     }, [total, percent])
 
     return (
-        <div className='col'>
+        <div className='col bg2 p-4 rounded-xl'>
             <div className='row'>
-                <span className='bubble'>$</span>
+                <span className='bg3 p-2 rounded-xl '>$</span>
                 <input
+                    className='bg3 p-2 rounded-xl'
                     type='number'
                     placeholder='Total'
                     onChange={(e) => {
@@ -25,8 +26,9 @@ export function Tip() {
                 />
             </div>
             <div className='row'>
-                <span className='bubble'>%</span>
+                <span className='bg3 p-2 rounded-xl '>%</span>
                 <input
+                    className='bg3 p-2 rounded-xl'
                     type='number'
                     placeholder='Tip Percent'
                     onChange={(e) => {
@@ -34,7 +36,7 @@ export function Tip() {
                     }}
                 />
             </div>
-            <div className='bubble'>
+            <div className='bg3 p-2 rounded-xl '>
                 <div className='row'>{`Tip: $${tip.toLocaleString()}`}</div>
                 <div className='row'>
                     {`Total with tip: $${(total + tip).toLocaleString()}`}

@@ -31,17 +31,32 @@ export function Temperature() {
     }
 
     return (
-        <div className='col'>
+        <div className='col bg2 p-4 rounded-xl'>
             <div className='row'>
-                <input type='number' id='C' onChange={() => tempChange('C')} />
+                <input
+                    className='bg3 p-2 rounded-xl'
+                    type='number'
+                    id='C'
+                    onChange={() => tempChange('C')}
+                />
                 <span>Celsius</span>
             </div>
             <div className='row'>
-                <input type='number' id='F' onChange={() => tempChange('F')} />
+                <input
+                    className='bg3 p-2 rounded-xl'
+                    type='number'
+                    id='F'
+                    onChange={() => tempChange('F')}
+                />
                 <span>Fahrenheit</span>
             </div>
             <div className='row'>
-                <input type='number' id='K' onChange={() => tempChange('K')} />
+                <input
+                    className='bg3 p-2 rounded-xl'
+                    type='number'
+                    id='K'
+                    onChange={() => tempChange('K')}
+                />
                 <span>Kelvin</span>
             </div>
         </div>

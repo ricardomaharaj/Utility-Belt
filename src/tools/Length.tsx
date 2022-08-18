@@ -94,10 +94,11 @@ export function Length() {
     }
 
     return (
-        <div className='col'>
+        <div className='col bg2 p-4 rounded-xl'>
             {UnitMap.map((x, i) => (
                 <div className='row' key={i}>
                     <input
+                        className='bg3 p-2 rounded-xl'
                         type='number'
                         id={x}
                         onChange={() => handleChange(x)}

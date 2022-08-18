@@ -13,10 +13,11 @@ export function Discount() {
     }, [total, percent])
 
     return (
-        <div className='col'>
+        <div className='col bg2 p-4 rounded-xl'>
             <div className='row'>
-                <span className='bubble'>$</span>
+                <span className='bg3 p-2 rounded-xl'>$</span>
                 <input
+                    className='bg3 p-2 rounded-xl'
                     type='number'
                     placeholder='Total'
                     onChange={(e) => {
@@ -25,8 +26,9 @@ export function Discount() {
                 />
             </div>
             <div className='row'>
-                <span className='bubble'>%</span>
+                <span className='bg3 p-2 rounded-xl'>%</span>
                 <input
+                    className='bg3 p-2 rounded-xl'
                     type='number'
                     placeholder='Percent Off'
                     onChange={(e) => {
@@ -34,7 +36,7 @@ export function Discount() {
                     }}
                 />
             </div>
-            <div className='bubble'>
+            <div className='bg3 p-2 rounded-xl'>
                 <div className='row'>{`Savings: $${discount.toLocaleString()}`}</div>
                 <div className='row'>
                     {`Total minus discount: $${(
