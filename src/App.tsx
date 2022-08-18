@@ -8,26 +8,22 @@ import { Length } from './tools/Length'
 export function App() {
     return (
         <BrowserRouter>
-            <div className='container mx-auto my-2'>
+            <div className='container mx-auto'>
                 <div className='m-2'>
                     <Link
                         to='/'
                         className='row text-xl m-4 text-center justify-center'
                     >
-                        <span>Utility Belt</span>
+                        <span className='bg2 p-4 rounded-xl'>Utility Belt</span>
                     </Link>
-                    <div className='bg-slate-800 rounded-xl p-4'>
-                        <Routes>
-                            <Route path='/' element={<Home />} />
-                            <Route path='/tip' element={<Tip />} />
-                            <Route path='/discount' element={<Discount />} />
-                            <Route
-                                path='/temperature'
-                                element={<Temperature />}
-                            />
-                            <Route path='/length' element={<Length />} />
-                        </Routes>
-                    </div>
+
+                    <Routes>
+                        <Route path='/' element={<Home />} />
+                        <Route path='/tip' element={<Tip />} />
+                        <Route path='/discount' element={<Discount />} />
+                        <Route path='/temperature' element={<Temperature />} />
+                        <Route path='/length' element={<Length />} />
+                    </Routes>
                 </div>
             </div>
         </BrowserRouter>
