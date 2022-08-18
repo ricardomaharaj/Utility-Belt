@@ -20,10 +20,10 @@ body {
     @apply bg-slate-900 text-white;
 }
 
-input {
-    @apply bg-slate-700 rounded-xl p-2;
+.bg2 {
+    @apply bg-slate-800;
 }
 
-.bubble {
-    @apply bg-slate-700 rounded-xl p-2;
+.bg3 {
+    @apply bg-slate-700;
 }
