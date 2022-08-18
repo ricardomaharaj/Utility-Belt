@@ -16,6 +16,9 @@ export function Home() {
             <Link className='bg2 p-4 rounded-xl' to='/length'>
                 Length Converter
             </Link>
+            <Link className='bg2 p-4 rounded-xl' to='/time'>
+                Time Converter
+            </Link>
         </div>
     )
 }

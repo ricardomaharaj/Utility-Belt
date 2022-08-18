@@ -4,6 +4,7 @@ import { Discount } from './tools/Discount'
 import { Temperature } from './tools/Temperature'
 import { Tip } from './tools/Tip'
 import { Length } from './tools/Length'
+import { Time } from './tools/Time'
 
 export function App() {
     return (
@@ -23,6 +24,7 @@ export function App() {
                         <Route path='/discount' element={<Discount />} />
                         <Route path='/temperature' element={<Temperature />} />
                         <Route path='/length' element={<Length />} />
+                        <Route path='/time' element={<Time />} />
                     </Routes>
                 </div>
             </div>
