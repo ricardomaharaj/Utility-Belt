@@ -8,5 +8,6 @@ currently avaliable tools:
 -   Discount Calculator
 -   Temperature Converter
 -   Length Conveter
+-   Time Converter
 
 Use now at https://utility-belt.netlify.app/
