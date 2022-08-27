@@ -19,7 +19,7 @@ export function Tax() {
                 <input
                     className='bg3 p-2 rounded-xl'
                     type='number'
-                    placeholder='Total w/o Tax'
+                    placeholder='Total without tax'
                     onChange={(e) => {
                         setTotal(parseFloat(e.currentTarget.value) || 0.0)
                     }}
@@ -30,14 +30,14 @@ export function Tax() {
                 <input
                     className='bg3 p-2 rounded-xl'
                     type='number'
-                    placeholder='Tax Percent'
+                    placeholder='Tax percent'
                     onChange={(e) => {
                         setPercent(parseInt(e.currentTarget.value) || 0)
                     }}
                 />
             </div>
             <div className='bg3 p-2 rounded-xl '>
-                <div className='row'>{`tax: $${tax.toLocaleString()}`}</div>
+                <div className='row'>{`Tax: $${tax.toLocaleString()}`}</div>
                 <div className='row'>
                     {`Total with tax: $${(total + tax).toLocaleString()}`}
                 </div>
