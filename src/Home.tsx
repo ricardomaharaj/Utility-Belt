@@ -10,6 +10,9 @@ export function Home() {
             <Link className='bg2 p-4 rounded-xl' to='/discount'>
                 Discount Calculator
             </Link>
+            <Link className='bg2 p-4 rounded-xl' to='/tax'>
+                Tax Calculator
+            </Link>
             <Link className='bg2 p-4 rounded-xl' to='/temperature'>
                 Temperature Converter
             </Link>

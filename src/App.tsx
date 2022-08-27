@@ -5,6 +5,7 @@ import { Temperature } from './tools/Temperature'
 import { Tip } from './tools/Tip'
 import { Length } from './tools/Length'
 import { Time } from './tools/Time'
+import { Tax } from './tools/Tax'
 
 export function App() {
     return (
@@ -22,6 +23,7 @@ export function App() {
                         <Route path='/' element={<Home />} />
                         <Route path='/tip' element={<Tip />} />
                         <Route path='/discount' element={<Discount />} />
+                        <Route path='/tax' element={<Tax />} />
                         <Route path='/temperature' element={<Temperature />} />
                         <Route path='/length' element={<Length />} />
                         <Route path='/time' element={<Time />} />
