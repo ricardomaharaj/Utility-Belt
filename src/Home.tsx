@@ -22,6 +22,9 @@ export function Home() {
             <Link className='bg2 p-4 rounded-xl' to='/time'>
                 Time Converter
             </Link>
+            <Link className='bg2 p-4 rounded-xl' to='/mass'>
+                Mass Converter
+            </Link>
         </div>
     )
 }

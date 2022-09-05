@@ -6,6 +6,7 @@ import { Tip } from './tools/Tip'
 import { Length } from './tools/Length'
 import { Time } from './tools/Time'
 import { Tax } from './tools/Tax'
+import { Mass } from './tools/Mass'
 
 export function App() {
     return (
@@ -27,6 +28,7 @@ export function App() {
                         <Route path='/temperature' element={<Temperature />} />
                         <Route path='/length' element={<Length />} />
                         <Route path='/time' element={<Time />} />
+                        <Route path='/mass' element={<Mass />} />
                     </Routes>
                 </div>
             </div>
