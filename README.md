@@ -30,5 +30,4 @@ A collection of utilities that people often need
 
 Use it now at https://utility-belt.netlify.app/
 
-<img src=".gh/ub_home_light.png" width=200 />
-<img src=".gh/ub_home_dark.png" width=200 />
+<img src=".gh/ub_home_light.png" width=200 /> <img src=".gh/ub_home_dark.png" width=200 />
