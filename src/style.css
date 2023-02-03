@@ -1,29 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
+@layer base {
+  * {
     font-family: 'Ubuntu', sans-serif;
+  }
+  body {
+    @apply container mx-auto max-w-md dark:bg-stone-800;
+  }
+  #root {
+    @apply col m-2;
+  }
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
-.row {
-    @apply flex flex-row space-x-4;
+@layer components {
+  .input {
+    @apply border-b-2 border-black border-opacity-50 bg-inherit outline-none placeholder:text-black placeholder:text-opacity-50 focus:border-opacity-100;
+  }
+  .tool-header {
+    @apply my-4 justify-center;
+  }
+  .tool-header > div {
+    @apply rounded-xl px-4 py-2 text-xl shadow-lg;
+  }
+  .tool-surface {
+    @apply rounded-xl p-2 shadow-lg;
+  }
+
+  /* gradients */
+
+  .purple-gradient {
+    @apply bg-gradient-to-r from-purple-400 to-purple-500 dark:from-purple-300 dark:to-purple-400;
+  }
+  .blue-gradient {
+    @apply bg-gradient-to-r from-blue-400 to-blue-500 dark:from-blue-300 dark:to-blue-400;
+  }
+  .yellow-gradient {
+    @apply bg-gradient-to-r from-yellow-400 to-yellow-500 dark:from-yellow-300 dark:to-yellow-400;
+  }
+  .green-gradient {
+    @apply bg-gradient-to-r from-green-400 to-green-500 dark:from-green-300 dark:to-green-400;
+  }
+  .red-gradient {
+    @apply bg-gradient-to-r from-red-400 to-red-500 dark:from-red-300 dark:to-red-400;
+  }
+  .orange-gradient {
+    @apply bg-gradient-to-r from-orange-400 to-orange-500 dark:from-orange-300 dark:to-orange-400;
+  }
+  .fuchsia-gradient {
+    @apply bg-gradient-to-r from-fuchsia-400 to-fuchsia-500 dark:from-fuchsia-300 dark:to-fuchsia-400;
+  }
 }
 
-.col {
-    @apply flex flex-col space-y-4;
-}
-
-body {
-    @apply bg-slate-900 text-white;
-}
-
-.bg2 {
-    @apply bg-slate-800;
-}
-
-.bg3 {
-    @apply bg-slate-700;
+@layer utilities {
+  .row {
+    @apply flex flex-row;
+  }
+  .col {
+    @apply flex flex-col;
+  }
 }
