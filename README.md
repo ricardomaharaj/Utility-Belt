@@ -29,3 +29,6 @@ A collection of utilities that people often need
     - Tonne, Kilogram, Gram, Milligram, Imperial Ton, US Ton, Pound, Ounce
 
 Use it now at https://utility-belt.netlify.app/
+
+![dark_mode](https://github.com/ricardomaharaj/Utility-Belt/blob/main/.gh/ub_home_dark.png)
+![light_mode](https://github.com/ricardomaharaj/Utility-Belt/blob/main/.gh/ub_home_light.png)
