@@ -13,8 +13,8 @@ export function themeCheck() {
 }
 
 export function toggleTheme() {
-  let htmlE = document.documentElement
-  let theme = localStorage.theme
+  const htmlE = document.documentElement
+  const theme = localStorage.theme
   if (theme === 'dark') {
     localStorage.setItem('theme', 'light')
     htmlE.classList.remove('dark')

@@ -30,6 +30,11 @@ export function Home() {
           <i className='bi bi-cash-coin text-2xl' />
           <div className='text-lg'>Tax</div>
         </Link>
+
+        <Link className='col cyan-gradient rounded-xl p-4 shadow-lg' to='/date'>
+          <i className='bi bi-calendar-date text-2xl' />
+          <div className='text-lg'>Date</div>
+        </Link>
       </div>
 
       <div className='my-2 p-1 text-xl dark:text-white'>Convert</div>

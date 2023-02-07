@@ -58,6 +58,9 @@
   .fuchsia-gradient {
     @apply bg-gradient-to-r from-fuchsia-400 to-fuchsia-500 dark:from-fuchsia-300 dark:to-fuchsia-400;
   }
+  .cyan-gradient {
+    @apply bg-gradient-to-r from-cyan-400 to-cyan-500 dark:from-cyan-300 dark:to-cyan-400;
+  }
 }
 
 @layer utilities {
