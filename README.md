@@ -16,6 +16,7 @@ A collection of utilities that people often need
   - Tip Calculator
   - Tax Calculator
   - Discount Calculator
+  - Date Difference Calculator
 
 - Converters
 
@@ -30,4 +31,4 @@ A collection of utilities that people often need
 
 Use it now at https://utility-belt.netlify.app/
 
-<img src=".gh/ub_home_light.png" width=250 /> <img src=".gh/ub_home_dark.png" width=250 />
+<img src=".gh/ub-home.png" width=250 /> <img src=".gh/ub-home-dark.png" width=250 />
