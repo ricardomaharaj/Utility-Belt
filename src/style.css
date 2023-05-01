@@ -6,8 +6,8 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    font-family: 'Ubuntu', sans-serif;
+  html {
+    @apply font-[ubuntu];
   }
   body {
     @apply container mx-auto max-w-md dark:bg-stone-800;
