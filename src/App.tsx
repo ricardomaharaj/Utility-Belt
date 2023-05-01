@@ -1,18 +1,14 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Home } from './Home'
 import { Header } from './comps/header'
-
-import { Tip } from './tools/calculation/Tip'
+import { DateCalc } from './tools/calculation/Date'
 import { Discount } from './tools/calculation/Discount'
 import { Tax } from './tools/calculation/Tax'
-import { DateCalc } from './tools/calculation/Date'
-
-import { Temperature } from './tools/conversion/Temperature'
+import { Tip } from './tools/calculation/Tip'
 import { Length } from './tools/conversion/Length'
-import { Time } from './tools/conversion/Time'
 import { Mass } from './tools/conversion/Mass'
-
+import { Temperature } from './tools/conversion/Temperature'
+import { Time } from './tools/conversion/Time'
 import { themeCheck } from './util/theme'
 
 export function App() {
@@ -24,15 +20,15 @@ export function App() {
       <Routes>
         <Route path='/' element={<Home />} />
 
-        <Route path='/tip' element={<Tip />} />
+        <Route path='/date' element={<DateCalc />} />
         <Route path='/discount' element={<Discount />} />
         <Route path='/tax' element={<Tax />} />
-        <Route path='/date' element={<DateCalc />} />
+        <Route path='/tip' element={<Tip />} />
 
-        <Route path='/temperature' element={<Temperature />} />
         <Route path='/length' element={<Length />} />
-        <Route path='/time' element={<Time />} />
         <Route path='/mass' element={<Mass />} />
+        <Route path='/temperature' element={<Temperature />} />
+        <Route path='/time' element={<Time />} />
       </Routes>
     </BrowserRouter>
   )
