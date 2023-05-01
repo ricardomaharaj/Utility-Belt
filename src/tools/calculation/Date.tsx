@@ -1,57 +1,57 @@
-import { useEffect, useState } from 'react'
 import {
-  differenceInYears,
-  differenceInMonths,
-  differenceInWeeks,
   differenceInDays,
   differenceInHours,
   differenceInMinutes,
-  differenceInSeconds
+  differenceInMonths,
+  differenceInSeconds,
+  differenceInWeeks,
+  differenceInYears,
 } from 'date-fns'
+import { useEffect, useState } from 'react'
 
 export function DateCalc() {
   document.title = 'Date Calculator'
 
-  let [startDate, setStartDate] = useState<Date | null>(null)
-  let [endDate, setEndDate] = useState<Date | null>(null)
+  const [startDate, setStartDate] = useState<Date | null>(null)
+  const [endDate, setEndDate] = useState<Date | null>(null)
 
-  let [years, setYears] = useState(0)
-  let [months, setMonths] = useState(0)
-  let [weeks, setWeeks] = useState(0)
-  let [days, setDays] = useState(0)
-  let [hours, setHours] = useState(0)
-  let [minutes, setMinutes] = useState(0)
-  let [seconds, setSeconds] = useState(0)
+  const [years, setYears] = useState(0)
+  const [months, setMonths] = useState(0)
+  const [weeks, setWeeks] = useState(0)
+  const [days, setDays] = useState(0)
+  const [hours, setHours] = useState(0)
+  const [minutes, setMinutes] = useState(0)
+  const [seconds, setSeconds] = useState(0)
 
-  let diffArr = [
+  const diffArr = [
     {
       name: 'Years',
-      val: years
+      val: years,
     },
     {
       name: 'Months',
-      val: months
+      val: months,
     },
     {
       name: 'Weeks',
-      val: weeks
+      val: weeks,
     },
     {
       name: 'Days',
-      val: days
+      val: days,
     },
     {
       name: 'Hours',
-      val: hours
+      val: hours,
     },
     {
       name: 'Minutes',
-      val: minutes
+      val: minutes,
     },
     {
       name: 'Seconds',
-      val: seconds
-    }
+      val: seconds,
+    },
   ]
 
   useEffect(() => {

@@ -18,7 +18,7 @@ const units: Unit[] = [
   'Months',
   'Years',
   'Decades',
-  'Centuries'
+  'Centuries',
 ]
 
 export function Time() {

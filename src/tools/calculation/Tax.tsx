@@ -1,15 +1,17 @@
 import { useEffect, useState } from 'react'
+import BiCurrencyDollar from '~icons/bi/currency-dollar'
+import BiPercent from '~icons/bi/percent'
 
 export function Tax() {
   document.title = 'Tax Calculator'
 
-  let [total, setTotal] = useState(0)
-  let [percent, setPercent] = useState(0)
-  let [tax, setTax] = useState(0)
+  const [total, setTotal] = useState(0)
+  const [percent, setPercent] = useState(0)
+  const [tax, setTax] = useState(0)
 
   useEffect(() => {
-    let x = Math.round(total * (percent / 100))
-    setTax(x)
+    const newTax = Math.round(total * (percent / 100))
+    setTax(newTax)
   }, [total, percent])
 
   return (
@@ -19,7 +21,7 @@ export function Tax() {
       </div>
       <div className='col tool-surface space-y-2 bg-yellow-200'>
         <div className='row p-2'>
-          <i className='bi bi-currency-dollar mr-4' />
+          <BiCurrencyDollar className='m-1 mr-3' />
           <input
             className='input selection:bg-yellow-300'
             type='number'
@@ -28,7 +30,7 @@ export function Tax() {
           />
         </div>
         <div className='row p-2'>
-          <i className='bi bi-percent mr-4' />
+          <BiPercent className='m-1 mr-3' />
           <input
             className='input selection:bg-yellow-300'
             type='number'

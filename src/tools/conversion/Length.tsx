@@ -14,7 +14,7 @@ const units: Unit[] = [
   'Mile',
   'Yard',
   'Foot',
-  'Inch'
+  'Inch',
 ]
 
 export function Length() {

@@ -1,4 +1,11 @@
 import { Link } from 'react-router-dom'
+import BiBox from '~icons/bi/box'
+import BiCalendarDate from '~icons/bi/calendar-date'
+import BiCashCoin from '~icons/bi/cash-coin'
+import BiCoin from '~icons/bi/coin'
+import BiHourglassSplit from '~icons/bi/hourglass-split'
+import BiRulers from '~icons/bi/rulers'
+import BiThermometerHalf from '~icons/bi/thermometer-half'
 
 export function Home() {
   document.title = 'Utility Belt'
@@ -11,7 +18,7 @@ export function Home() {
           className='col purple-gradient rounded-xl p-4 shadow-lg'
           to='/tip'
         >
-          <i className='bi bi-coin text-2xl' />
+          <BiCoin className='mb-2 text-xl' />
           <div className='text-lg'>Tip</div>
         </Link>
 
@@ -19,7 +26,7 @@ export function Home() {
           className='col green-gradient rounded-xl p-4 shadow-lg'
           to='/discount'
         >
-          <i className='bi bi-cash-coin text-2xl' />
+          <BiCashCoin className='mb-2 text-xl' />
           <div className='text-lg'>Discount</div>
         </Link>
 
@@ -27,12 +34,12 @@ export function Home() {
           className='col yellow-gradient rounded-xl p-4 shadow-lg'
           to='/tax'
         >
-          <i className='bi bi-cash-coin text-2xl' />
+          <BiCashCoin className='mb-2 text-xl' />
           <div className='text-lg'>Tax</div>
         </Link>
 
         <Link className='col cyan-gradient rounded-xl p-4 shadow-lg' to='/date'>
-          <i className='bi bi-calendar-date text-2xl' />
+          <BiCalendarDate className='mb-2 text-xl' />
           <div className='text-lg'>Date</div>
         </Link>
       </div>
@@ -43,7 +50,7 @@ export function Home() {
           className='col blue-gradient rounded-xl p-4 shadow-lg '
           to='/temperature'
         >
-          <i className='bi bi-thermometer-half text-2xl' />
+          <BiThermometerHalf className='mb-2 text-xl' />
           <div className='text-lg'>Temperature</div>
         </Link>
 
@@ -51,7 +58,7 @@ export function Home() {
           className='col red-gradient rounded-xl p-4 shadow-lg'
           to='/length'
         >
-          <i className='bi bi-rulers text-2xl' />
+          <BiRulers className='mb-2 text-xl' />
           <div className='text-lg'>Length</div>
         </Link>
 
@@ -59,7 +66,7 @@ export function Home() {
           className='col orange-gradient rounded-xl p-4 shadow-lg'
           to='/time'
         >
-          <i className='bi bi-hourglass-split text-2xl' />
+          <BiHourglassSplit className='mb-2 text-xl' />
           <div className='text-lg'>Time</div>
         </Link>
 
@@ -67,7 +74,7 @@ export function Home() {
           className='col fuchsia-gradient rounded-xl p-4 shadow-lg'
           to='/mass'
         >
-          <i className='bi bi-box text-2xl' />
+          <BiBox className='mb-2 text-xl' />
           <div className='text-lg'>Mass</div>
         </Link>
       </div>

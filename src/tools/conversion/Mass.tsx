@@ -16,7 +16,7 @@ const units: Unit[] = [
   'Imperial_Ton',
   'US_Ton',
   'Pound',
-  'Ounce'
+  'Ounce',
 ]
 
 export function Mass() {

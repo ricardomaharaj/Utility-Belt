@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
+import BiCurrencyDollar from '~icons/bi/currency-dollar'
+import BiPercent from '~icons/bi/percent'
 
 export function Discount() {
   document.title = 'Discount Calculator'
 
-  let [total, setTotal] = useState(0)
-  let [percent, setPercent] = useState(0)
-  let [discount, setDiscount] = useState(0)
+  const [total, setTotal] = useState(0)
+  const [percent, setPercent] = useState(0)
+  const [discount, setDiscount] = useState(0)
 
   useEffect(() => {
     const newDiscount = Math.round(total * (percent / 100))
@@ -19,7 +21,7 @@ export function Discount() {
       </div>
       <div className='col tool-surface space-y-2 bg-green-300 '>
         <div className='row p-2'>
-          <i className='bi bi-currency-dollar mr-4' />
+          <BiCurrencyDollar className='m-1 mr-3' />
           <input
             className='input selection:bg-green-400'
             type='number'
@@ -28,7 +30,7 @@ export function Discount() {
           />
         </div>
         <div className='row p-2'>
-          <i className='bi bi-percent mr-4' />
+          <BiPercent className='m-1 mr-3' />
           <input
             className='input selection:bg-green-400'
             type='number'
